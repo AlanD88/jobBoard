@@ -14,7 +14,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
 
     db =  QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName("C:/Users/Rawr/Desktop/Documents/QT/JobBoard/jobBoard.sqlite");
+    db.setDatabaseName("C:/JobBoard/jobBoard.sqlite");
 
     bool ok = db.open();
     if(!ok){
